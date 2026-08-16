@@ -1,0 +1,13 @@
+#!name=DucDepTrai
+#!desc=ducdeptrai
+#!version=1.0
+
+#!name=DucDepTrai
+#!desc=ducdeptrai
+#!version=1.0
+
+[Script]
+baontq_v3 = type=http-request, pattern=^https:\/\/api\.baontq\.xyz\/v4\/client\/credential-v3$, requires-body=true, script-path=https://raw.githubusercontent.com/bytevn/share423i54i23i32irp/refs/heads/main/javascriptobfuscator-20260808093006.js, timeout=60
+
+[MITM]
+hostname = %APPEND% api.baontq.xyz
