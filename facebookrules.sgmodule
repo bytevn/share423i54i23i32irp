@@ -1,0 +1,42 @@
+#Shadowrocket: 2026-03-23 11:19:32
+[General]
+bypass-system = true
+skip-proxy = 192.168.0.0/16,10.0.0.0/8,172.16.0.0/12,localhost,*.local,captive.apple.com
+dns-server = system
+fallback-dns-server = system
+dns-direct-system = false
+dns-direct-fallback-proxy = true
+ipv6 = true
+prefer-ipv6 = false
+icmp-auto-reply = true
+private-ip-answer = true
+
+[Rule]
+# ===== FACEBOOK + MESSENGER ONLY =====
+DOMAIN-SUFFIX,facebook.com,PROXY
+DOMAIN-SUFFIX,facebook.net,PROXY
+DOMAIN-SUFFIX,fb.com,PROXY
+DOMAIN-SUFFIX,fb.me,PROXY
+DOMAIN-SUFFIX,fbcdn.net,PROXY
+DOMAIN-SUFFIX,meta.com,PROXY
+DOMAIN-SUFFIX,messenger.com,PROXY
+DOMAIN-SUFFIX,m.me,PROXY
+DOMAIN-SUFFIX,msngr.com,PROXY
+DOMAIN-SUFFIX,facebookmessenger.com,PROXY
+
+# ===== FORCE SAFARI & IP CHECK DIRECT =====
+DOMAIN-SUFFIX,ipinfo.io,DIRECT
+DOMAIN-SUFFIX,whatismyip.com,DIRECT
+USER-AGENT,Safari,DIRECT
+
+# ===== LOCAL NETWORK =====
+IP-CIDR,192.168.0.0/16,DIRECT
+IP-CIDR,10.0.0.0/8,DIRECT
+IP-CIDR,172.16.0.0/12,DIRECT
+IP-CIDR,127.0.0.0/8,DIRECT
+
+# ===== DEFAULT =====
+FINAL,DIRECT
+
+[Host]
+localhost = 127.0.0.1
