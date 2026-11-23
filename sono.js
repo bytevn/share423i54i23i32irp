@@ -23,13 +23,13 @@ var revenuecat = {
       refunded_at: null,
       unsubscribe_detected_at: null,
       original_purchase_date: "2027-11-25T10:10:15Z",
-      purchase_date: "2027-11-25T10:10:14Z",
+      purchase_date: "2026-11-23T21:19:16Z",
       store: "app_store",
       store_transaction_id: "2000001108724193",
   },
   sono_premium = {
       grace_period_expires_date: null,
-      purchase_date: "2027-11-25T10:10:14Z",
+      purchase_date: "2026-11-23T21:19:16Z",
       product_identifier: "sono_lifetime_premium",
       expires_date: null
   };
