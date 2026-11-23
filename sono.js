@@ -48,7 +48,7 @@ const revenucat = {
       }
     }
   }
-}
+};
 $done({
   body: JSON.stringify(revenucat)
 });
